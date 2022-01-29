@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Aprendizado sobre forms</h1>
+    <h3> Encontre no Google : </h3>
+    <img src="C:\workspace\DESENVOLVEDOR\workspace\fotos\logo_google.png" height="50" >
+    <hr>
+    <form action="https://www.google.com/search" target="_blank">
+      <label for="q">O que deseja pesquisar? </label>  
+      <input type="text" id="q" name="q" placeholder="Git, GitHub, LinkedIn" required>
+      <input type="submit" value="Pesquisar">
+    </form>
+    <hr>
+    <h4>Faça o seu cadastro </h4>
+    <form action="#">
+        <label for="name">Nome completo: </label><br>
+        <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required><br>
+        <label for="e">E-mail: </label><br>
+        <input type="email" id="e" name="e" placeholder="Digite o seu e-mail" required><br><br>
+        <h4>Gênero : </h4>
+        <input type="radio" id="Masculino" name="gender" value="Masculino" required>
+        <label for="Masculino">Masculino</label><br>
+        <input type="radio" id="Femimino" name="gender" value="Femimino" required>
+        <label for="Femimino">Femimino</label><br>
+        <input type="radio" id="Não informar" name="gender" value="Não informar" required>
+        <label for="Não informar">Não informar</label><br><br>
+        <label for="date">Data de Nascimento: </label><br>
+        <input type="date" name="bday" placeholder="Data de nascimento" required><br><br>
+        <label for="psw">Crie uma senha: </label><br>
+        <input type="password" id="psw" name="psw" placeholder="Senha" required><br>
+        <input type="password" placeholder="Repita a senha"><br>
+        <input type="submit" value="Enviar">
+        <input type="button" onclick="alert('Bem-vindo ao site do Gabriel Newton!')" value="Clique aqui!">
+        </form><br>
+        <form>
+            <label for="myfile">Adicione uma foto no seu cadastro: </label><br>
+            <input type="file" id="myfile" name="myfile">
+        </form>
+        <br><br><br><br>
+        <p><strong>Note:</strong> type="date" is not supported in Internet Explorer 11 or prior Safari 14.1.</p>
+</body>
+</html>
